@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 let sales = 123_456_789;
 let course = "TypeScript";
-let is_published = true;
+// let is_published: boolean = true;
 let level;
 function render(document) {
     console.log(document);
@@ -27,4 +27,20 @@ let employee = {
     id: 1,
     name: "Mosh"
 };
+class Point {
+    x;
+    y;
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+    draw() {
+        console.log('X: ' + this.x + ', Y: ' + this.y);
+    }
+    getDistance(another) {
+        // ...
+    }
+}
+let point = new Point(1, 2);
+point.draw();
 //# sourceMappingURL=index.js.map

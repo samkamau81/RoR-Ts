@@ -1,6 +1,6 @@
 let sales: number = 123_456_789;
 let course: string = "TypeScript";
-let is_published: boolean = true;
+// let is_published: boolean = true;
 let level;      
 
 function render(document: any) {
@@ -24,3 +24,24 @@ function calculateTax(income: number, taxYear = 2022): number {
 let employee = { 
     id: 1, 
     name: "Mosh" };
+
+
+
+class Point {
+    x: number;
+    y: number;
+
+    constructor(x?: number, y?: number) {
+        this.x = x;
+        this.y = y;
+    }       
+    draw() {
+        console.log('X: ' + this.x + ', Y: ' + this.y);
+    }       
+    getDistance(another: Point) {
+        // ...
+    }   
+}
+
+let point = new Point(1, 2);
+point.draw();
